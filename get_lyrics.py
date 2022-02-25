@@ -10,8 +10,11 @@ base_url = "https://api.genius.com/"
 
 
 class GeniusRetriever:
-    def __init__(self) -> None:
-        self.keys = self.get_keys()
+    def __init__(self, keys: dict = None) -> None:
+        if not keys:
+            self.keys = self.get_keys()
+        else:
+            self.keys = keys
         self.access = self.keys["access_token"]
         self.auth_header = {"Authorization": "Bearer " + self.access}
         self.request_count = 0
