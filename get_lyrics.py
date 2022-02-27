@@ -85,6 +85,9 @@ class GeniusRetriever:
         with open(outfile, "w") as f:
             f.write(self.text)
 
+    def get_lyrics_as_str(self):
+        return self.text
+
 
 if __name__ == "__main__":
     g = GeniusRetriever()
