@@ -1,6 +1,6 @@
 # GENIUS LYRICS SCRAPER
 
----
+This is a tiny tool that I made for pulling down a bunch of lyrics from a selected set of artists using the Genius API. It's a quick way for grabbing fine-tuning data for natural language models. Modern LLMs have made this mostly obsolete, but I'll leave this here for anyone fiddling with their own models.
 
 ## Usage
 
